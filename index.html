@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>DccSm System</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="DccSm System">
+        </div>
+    </nav>
+    <header>
+        <h1>Directory-based cache coherence simulator</h1>
+    </header>
+    <section class="container">
+        <div class="block">
+            <div class="nodes">
+                <div class="boxes">
+                    <div class="box">
+                        <div class="directory">
+                            <p>D0</p>
+                        </div>
+                        <div class="box-content">
+                            <div class="node">
+                                <div class="head">
+                                    <h3>Home</h3>
+                                </div>
+                                <span>N0</span>
+                                <div class="body">
+                                    <div class="element processor">P0</div>
+                                    <span class="fa fa-arrows-up-down fa-fade"></span>
+                                    <div class="element cash">C0</div>
+                                    <span class="fa fa-arrows-up-down fa-fade"></span>
+                                    <div class="element memoire">M0</div>
+                                </div>
+                            </div>
+                            <div class="connector"><span class="fa fa-arrows-up-down fa-fade"></span></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="nodes">
+                <div class="boxes">
+                    <div class="box">
+                        <div class="directory">
+                            <p>D1</p>
+                        </div>
+                        <div class="box-content">
+                            <div class="node">
+                                <div class="head">
+                                    <h3>Remote</h3>
+                                </div>
+                                <span>N1</span>
+                                <div class="body">
+                                    <div class="element processor">P1</div>
+                                    <span class="fa fa-arrows-up-down fa-fade"></span>
+                                    <div class="element cash">C1</div>
+                                    <span class="fa fa-arrows-up-down fa-fade"></span>
+                                    <div class="element memoire">M1</div>
+                                </div>
+                            </div>
+                            <div class="connector"><span class="fa fa-arrows-up-down fa-fade"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nodes">
+                <div class="boxes">
+                    <div class="box">
+                        <div class="directory">
+                            <p>D2</p>
+                        </div>
+                        <div class="box-content">
+                            <div class="node">
+                                <div class="head">
+                                    <h3>Local</h3>
+                                </div>
+                                <span>N2</span>
+                                <div class="body">
+                                    <div class="element processor">P2</div>
+                                    <span class="fa fa-arrows-up-down fa-fade"></span>
+                                    <div class="element cash">C2</div>
+                                    <span class="fa fa-arrows-up-down fa-fade"></span>
+                                    <div class="element memoire">M2</div>
+                                </div>
+                            </div>
+                            <div class="connector"><span class="fa fa-arrows-up-down fa-fade"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="connections-box">
+            <p>Interconnection Network</p>
+        </div>
+    </section>
+    <section class="input-display">
+        <div class="input">
+            <div class="display-block">
+                <span>Cash Name</span>
+                <div class="block">
+                    C1
+                </div>
+            </div>
+            <div class="display-block">
+                <span>Block Name</span>
+                <div class="block">
+                    B1
+                </div>
+            </div>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" placeholder="Inter block name">
+                </div>
+                <div class="btns">
+                    <button type="submit" class="btn btn-primary">Read</button>
+                    <button type="submit" class="btn btn-secondary">Write</button>
+                </div>
+            </form>
+        </div>
+        <div class="display">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Cah Status</th>
+                        <th></th>
+                        <th>Memory action</th>
+                        <th>Msg type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C0</td>
+                        <td></td>
+                        <td>M0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>C1</td>
+                        <td></td>
+                        <td>M1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>C2</td>
+                        <td></td>
+                        <td>M2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright"><span>@DccSm </span>System 2023</p>
+            <p>
+                Designed & Implemented by <br>
+                <span>M. Ashuza</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
