@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer type="module"></script>
     <title>DccSm System</title>
 </head>
 <body>
@@ -22,48 +23,89 @@
             <div class="nodes">
                 <div class="boxes">
                     <div class="box">
-                        <div class="directory">
-                            <p>D0</p>
-                        </div>
                         <div class="box-content">
                             <div class="node">
                                 <div class="head">
-                                    <h3>Home</h3>
+                                    <h3>N0 Home</h3>
                                 </div>
-                                <span>N0</span>
                                 <div class="body">
                                     <div class="element processor">P0</div>
                                     <span class="fa fa-arrows-up-down fa-fade"></span>
-                                    <div class="element cash">C0</div>
+                                    <div class="element cash">
+                                        <div class="responsive-table">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fw-bolder text-uppercase">Block</th>
+                                                        <th class="fw-bolder text-uppercase">Data</th>
+                                                        <th class="fw-bolder text-uppercase">Etat</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>B0</td>
+                                                        <td>hell</td>
+                                                        <td>Modified</td>
+                                                    </tr>
+                                                    <!-- Visible by default  -->
+                                                    <!-- <tr>
+                                                        <td class="text-danger">Cache vide</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                     <span class="fa fa-arrows-up-down fa-fade"></span>
-                                    <div class="element memoire">M0</div>
+                                    <div class="element memoire homememory">MM0</div>
                                 </div>
                             </div>
                             <div class="connector"><span class="fa fa-arrows-up-down fa-fade"></span></div>
                         </div>
                     </div>
                 </div>
-                
             </div>
     
             <div class="nodes">
                 <div class="boxes">
                     <div class="box">
-                        <div class="directory">
-                            <p>D1</p>
-                        </div>
                         <div class="box-content">
                             <div class="node">
                                 <div class="head">
-                                    <h3>Remote</h3>
+                                    <h3>N1 Local</h3>
                                 </div>
-                                <span>N1</span>
                                 <div class="body">
                                     <div class="element processor">P1</div>
                                     <span class="fa fa-arrows-up-down fa-fade"></span>
-                                    <div class="element cash">C1</div>
+                                    <div class="element cash">
+                                        <div class="responsive-table">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fw-bolder text-uppercase">Block</th>
+                                                        <th class="fw-bolder text-uppercase">Data</th>
+                                                        <th class="fw-bolder text-uppercase">Etat</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>B0</td>
+                                                        <td>hell</td>
+                                                        <td>Modified</td>
+                                                    </tr>
+                                                    <!-- Visible by default  -->
+                                                    <!-- <tr>
+                                                        <td class="text-danger">Cache vide</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                     <span class="fa fa-arrows-up-down fa-fade"></span>
-                                    <div class="element memoire">M1</div>
+                                    <div class="element memoire">MM1</div>
                                 </div>
                             </div>
                             <div class="connector"><span class="fa fa-arrows-up-down fa-fade"></span></div>
@@ -75,21 +117,42 @@
             <div class="nodes">
                 <div class="boxes">
                     <div class="box">
-                        <div class="directory">
-                            <p>D2</p>
-                        </div>
                         <div class="box-content">
                             <div class="node">
                                 <div class="head">
-                                    <h3>Local</h3>
+                                    <h3>N2 Remote</h3>
                                 </div>
-                                <span>N2</span>
                                 <div class="body">
                                     <div class="element processor">P2</div>
                                     <span class="fa fa-arrows-up-down fa-fade"></span>
-                                    <div class="element cash">C2</div>
+                                    <div class="element cash">
+                                        <div class="responsive-table">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fw-bolder text-uppercase">Block</th>
+                                                        <th class="fw-bolder text-uppercase">Data</th>
+                                                        <th class="fw-bolder text-uppercase">Etat</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>B0</td>
+                                                        <td>hell</td>
+                                                        <td>Modified</td>
+                                                    </tr>
+                                                    <!-- Visible by default  -->
+                                                    <!-- <tr>
+                                                        <td class="text-danger">Cache vide</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                     <span class="fa fa-arrows-up-down fa-fade"></span>
-                                    <div class="element memoire">M2</div>
+                                    <div class="element memoire">MM2</div>
                                 </div>
                             </div>
                             <div class="connector"><span class="fa fa-arrows-up-down fa-fade"></span></div>
@@ -103,68 +166,91 @@
         </div>
     </section>
     <section class="input-display">
+    
         <div class="input">
-            <div class="display-block">
-                <span>Cash Name</span>
-                <div class="block">
-                    C1
-                </div>
+            <div class="btn-group directory" role="group">
+                <button type="button" class=" btn-1 btn-outline-primary active">Home</button>
+                <button type="button" class=" btn-1 btn-outline-primary">Local</button>
+                <button type="button" class=" btn-1 btn-outline-primary">Remote</button>
             </div>
-            <div class="display-block">
-                <span>Block Name</span>
-                <div class="block">
-                    B1
-                </div>
+            <div class="btn-group Block" role="group">
+                <button type="button" class=" btn-1 btn-outline-primary active">BO</button>
+                <button type="button" class=" btn-1 btn-outline-primary">B1</button>
+                <button type="button" class=" btn-1 btn-outline-primary">B3</button>
             </div>
-            <form action="#" method="post">
+
+            <form action="#">
                 <div class="form-group">
-                    <input type="text" placeholder="Inter block name">
+                    <input required="" type="text" placeholder="Enter data ...">
                 </div>
                 <div class="btns">
                     <button type="submit" class="btn btn-primary">Read</button>
                     <button type="submit" class="btn btn-secondary">Write</button>
+                    <button type="submit" class="btn reset">Reset</button>
                 </div>
             </form>
         </div>
-        <div class="display">
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Cah Status</th>
-                        <th></th>
-                        <th>Memory action</th>
-                        <th>Msg type</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>C0</td>
-                        <td></td>
-                        <td>M0</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>C1</td>
-                        <td></td>
-                        <td>M1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>C2</td>
-                        <td></td>
-                        <td>M2</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container-output">
+            <div class="repertoire">
+                <div class="card">
+                    <div class="card-header fw-bolder text-uppercase">Repertoire</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="fw-bolder text-uppercase">Block</th>
+                                        <th class="fw-bolder text-uppercase">Etat</th>
+                                        <th class="fw-bolder text-uppercase">Sharer bits</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>B0</td>
+                                        <td>Unshared</td>
+                                        <td>---</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <div class="card">
+                    <div class="card-header fw-bolder text-uppercase">Messages</div>
+                    <div class="card-body">
+                        <p class="alert alert-info">Veiller faire reset pour bien afficher les messages</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th class="fw-bolder text-uppercase">Message Type </th>
+                                        <th class="fw-bolder text-uppercase">Source</th>
+                                        <th class="fw-bolder text-uppercase">Destination</th>
+                                        <th class="fw-bolder text-uppercase">Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>             
+                                    <!-- <tr>
+                                        <td>{{msg.type_message}}</td>
+                                        <td>{{msg.source}}</td>
+                                        <td>{{msg.destination}}</td>
+                                        <td>{{msg.content_msg}}</td>
+                                    </tr> -->
+                                
+                                    <tr>
+                                        <td class="text-danger">Aucun message</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
